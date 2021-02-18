@@ -16,10 +16,11 @@ auth_token = os.getenv('auth_token')
 
 # print(os.getenv('account_sid'))
 # print(os.getenv('auth_token'))
+#'+15183802912'
 
-origin = '+15183802912'
+origin = os.getenv('twilio_number')
 destination = '+15188593257'
-corpus = 'Now with .env variables!'
+corpus = 'Now with .env variables, even the from!'
 
 client = Client(account_sid,auth_token)
 
