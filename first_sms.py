@@ -11,15 +11,17 @@ from twilio.rest import Client
 # and set the environment variables. See http://twil.io/secure
 load_dotenv()
 
+account_sid = os.getenv('account_sid')
+auth_token = os.getenv('auth_token')
 
 # print(os.getenv('account_sid'))
 # print(os.getenv('auth_token'))
 
 origin = '+15183802912'
 destination = '+15188593257'
-corpus = "let's get this right..."
+corpus = 'Now with .env variables!'
 
-client = Client(os.getenv('account_sid'), os.getenv('auth_token'))
+client = Client(account_sid,auth_token)
 
 
 message = client.messages \
