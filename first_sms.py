@@ -20,7 +20,8 @@ auth_token = os.getenv('auth_token')
 
 origin = os.getenv('twilio_number')
 destination = '+15188593257'
-corpus = 'Now with .env variables, even the from!'
+
+corpus = 'Hello fart! I am sending you SMS from a computer program I wrote.  Replies don''t go anywhere yet. I love you!'
 
 client = Client(account_sid,auth_token)
 
